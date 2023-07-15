@@ -1,0 +1,6 @@
+framework module Pods_FlipperEventStoreVieweriOS_Tests {
+  umbrella header "Pods-FlipperEventStoreVieweriOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

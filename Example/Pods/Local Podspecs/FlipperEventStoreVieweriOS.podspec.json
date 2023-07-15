@@ -1,0 +1,22 @@
+{
+  "name": "FlipperEventStoreVieweriOS",
+  "version": "0.1.0",
+  "summary": "A short description of FlipperEventStoreVieweriOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Hai Feng Kao/FlipperEventStoreVieweriOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Hai Feng Kao": "haifeng@cocoaspice.in"
+  },
+  "source": {
+    "git": "https://github.com/Hai Feng Kao/FlipperEventStoreVieweriOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "FlipperEventStoreVieweriOS/Classes/**/*"
+}

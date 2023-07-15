@@ -1,0 +1,16 @@
+PODS:
+  - FlipperEventStoreVieweriOS (0.1.0)
+
+DEPENDENCIES:
+  - FlipperEventStoreVieweriOS (from `../`)
+
+EXTERNAL SOURCES:
+  FlipperEventStoreVieweriOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlipperEventStoreVieweriOS: d4e39c8f7c391ab14546033d57433280d3196e3b
+
+PODFILE CHECKSUM: 3b85a97f5a3f08deaf0ee4c674b62723b217852a
+
+COCOAPODS: 1.12.1

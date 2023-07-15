@@ -1,0 +1,6 @@
+framework module FlipperEventStoreVieweriOS {
+  umbrella header "FlipperEventStoreVieweriOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
