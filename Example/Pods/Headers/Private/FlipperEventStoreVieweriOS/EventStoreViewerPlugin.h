@@ -1,0 +1,1 @@
+../../../../../FlipperEventStoreVieweriOS/Classes/EventStoreViewerPlugin.h

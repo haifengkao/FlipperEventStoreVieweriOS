@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "EventStoreViewerPlugin.h"
 
 FOUNDATION_EXPORT double FlipperEventStoreVieweriOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char FlipperEventStoreVieweriOSVersionString[];
