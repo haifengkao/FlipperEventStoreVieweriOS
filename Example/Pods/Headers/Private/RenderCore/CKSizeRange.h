@@ -1,1 +1,0 @@
-../../../RenderCore/RenderCore/Geometry/CKSizeRange.h

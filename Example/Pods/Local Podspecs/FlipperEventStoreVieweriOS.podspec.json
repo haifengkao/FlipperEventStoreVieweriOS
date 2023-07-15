@@ -20,7 +20,7 @@
   },
   "source_files": "FlipperEventStoreVieweriOS/Classes/**/*",
   "swift_versions": "5.0",
-  "public_header_files": "FlipperEventStoreVieweriOS/Classes/FlipperEventStoreViewer.h",
+  "public_header_files": "FlipperEventStoreVieweriOS/Classes//EventStoreViewerPlugin.h",
   "xcconfig": {
     "CLANG_CXX_LIBRARY": "libc++"
   },

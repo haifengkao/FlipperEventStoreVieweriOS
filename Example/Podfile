@@ -8,25 +8,26 @@ inhibit_all_warnings!
 platform :ios, '15.0'
 
 def flipper
-  flipperkit_version = '0.202.0'
+  flipperkit_version = '0.203.0'
   # It is likely that you'll only want to include Flipper in debug builds,
   # in which case you add the `:configuration` directive:
-  pod 'FlipperKit', '~>' + flipperkit_version, :configuration => 'Debug'
-  pod 'FlipperKit/FlipperKitLayoutComponentKitSupport', '~>' + flipperkit_version, :configuration => 'Debug'
-  pod 'FlipperKit/SKIOSNetworkPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
-  pod 'FlipperKit/FlipperKitUserDefaultsPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
+    pod 'Flipper', '~>' + flipperkit_version, :configuration => 'Debug'
+    pod 'FlipperKit', '~>' + flipperkit_version, :configuration => 'Debug'
+#   pod 'FlipperKit/FlipperKitLayoutComponentKitSupport', '~>' + flipperkit_version, :configuration => 'Debug'
+#   pod 'FlipperKit/SKIOSNetworkPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
+#   pod 'FlipperKit/FlipperKitUserDefaultsPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
   # ...unfortunately at this time that means you'll need to explicitly mark
   # transitive dependencies as being for debug build only as well:
-  pod 'Flipper-DoubleConversion', :configuration => 'Debug'
-  pod 'Flipper-Folly', :configuration => 'Debug'
-  pod 'Flipper-Glog', :configuration => 'Debug'
-  pod 'Flipper-PeerTalk', :configuration => 'Debug'
-  pod 'boost-for-react-native', :configuration => 'Debug'
-  pod 'OpenSSL-Universal', :configuration => 'Debug'
-  pod 'CocoaAsyncSocket', :configuration => 'Debug'
+#   pod 'Flipper-DoubleConversion', :configuration => 'Debug'
+#   pod 'Flipper-Folly', :configuration => 'Debug'
+#   pod 'Flipper-Glog', :configuration => 'Debug'
+#   pod 'Flipper-PeerTalk', :configuration => 'Debug'
+#   pod 'boost-for-react-native', :configuration => 'Debug'
+#   pod 'OpenSSL-Universal', :configuration => 'Debug'
+#   pod 'CocoaAsyncSocket', :configuration => 'Debug'
   # ...except, of course, those transitive dependencies that your
   # application itself depends, e.g.:
-  pod 'ComponentKit', '~> 0.31'
+#   pod 'ComponentKit', '~> 0.31'
 
 end
 

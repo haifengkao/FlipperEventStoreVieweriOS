@@ -1,1 +1,0 @@
-../../../RenderCore/RenderCore/Utilities/CKEqualityHelpers.h

@@ -1,1 +1,0 @@
-../../../RenderCore/RenderCore/Base/CKOptional.h
