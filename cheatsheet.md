@@ -1,1 +1,2 @@
- pod lib lint --use-static-frameworks
+ pod lib lint --use-libraries
+pod trunk push --use-libraries
