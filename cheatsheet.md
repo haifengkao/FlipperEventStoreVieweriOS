@@ -1,0 +1,1 @@
+ pod lib lint --use-static-frameworks

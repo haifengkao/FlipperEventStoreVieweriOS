@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   s.swift_version = '5.0'
-  s.public_header_files = 'FlipperEventStoreVieweriOS/Classes/FlipperEventStoreViewer.h'
+  s.public_header_files = 'FlipperEventStoreVieweriOS/Classes//EventStoreViewerPlugin.h'
   s.xcconfig = {
        'CLANG_CXX_LIBRARY' => 'libc++'
   }
