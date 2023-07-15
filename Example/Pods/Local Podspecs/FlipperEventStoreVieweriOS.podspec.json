@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "FlipperKit": [
-
+      ">= 0.203"
     ]
   },
   "static_framework": true,

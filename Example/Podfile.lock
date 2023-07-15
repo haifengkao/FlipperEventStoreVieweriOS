@@ -15,7 +15,7 @@ PODS:
   - Flipper-Glog (0.5.0.5)
   - Flipper-PeerTalk (0.0.4)
   - FlipperEventStoreVieweriOS (0.1.0):
-    - FlipperKit
+    - FlipperKit (>= 0.203)
   - FlipperKit (0.203.0):
     - FlipperKit/Core (= 0.203.0)
   - FlipperKit/Core (0.203.0):
@@ -70,7 +70,7 @@ SPEC CHECKSUMS:
   Flipper-Folly: 584845625005ff068a6ebf41f857f468decd26b3
   Flipper-Glog: 70c50ce58ddaf67dc35180db05f191692570f446
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
-  FlipperEventStoreVieweriOS: 98daf50bc1b2427eed82f30d8e2a4ff8b071f6b9
+  FlipperEventStoreVieweriOS: 24f51f7d7fbe762c4e638bc99941219325109c95
   FlipperKit: 2bd3b69628fedcbdc66766d0dac0a8abd2de5f8f
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c

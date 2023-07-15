@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   }
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'FlipperKit'
+  s.dependency 'FlipperKit', '>= 0.203'
 
   # shutup target has transitive dependencies that include statically linked binaries: (Flipper-Boost-iOSX and FlipperKit)) during validation.
   s.static_framework = true
