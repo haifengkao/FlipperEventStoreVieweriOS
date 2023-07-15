@@ -44,10 +44,10 @@
 
 /// append a new value
 /// @param channelName each channel is a different event store
-/// @param value the value to append
+/// @param values the values to append
 /// @param key the key in the event store
 - (void)channel:(NSString*)channelName
-         value: (id)value
+         values: (NSArray<id>*)values
            key: (NSString*)key {
 
     if (self.dataCache[channelName] == NULL) {
@@ -58,13 +58,13 @@
     }
 
     // need cache the value in case the connection is not ready
-    [self.dataCache[channelName][key] addObject:value];
+    [self.dataCache[channelName][key] addObjectsFromArray:values];
 
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970] * 1000;
     NSString* intervalStr = [NSString stringWithFormat:@"%f", interval];
     NSMutableDictionary* params =
             [@{@"name" : key, @"time" : intervalStr} mutableCopy];
-    params[@"value"] = value;
+    params[@"value"] = values;
     params[@"preferences"] = channelName;
     [self.flipperConnection send:@"sharedPreferencesChange"
                       withParams:[params copy]];

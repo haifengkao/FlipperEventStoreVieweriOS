@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init;
 - (void)channel:(NSString*)channelName
-         value: (id)value
+         values: (NSArray<id>*)values
            key: (NSString*)key;
 
 @end

@@ -23,7 +23,8 @@
     
     [client start];
 
-    [plugin channel:@"test" value: @"hello" key: @"bad"];
+    [plugin channel:@"test2" values: @[] key: @"bad3"];
+    [plugin channel:@"test" values: @[@"hello", @"hello2"] key: @"bad"];
     
     // Override point for customization after application launch.
     return YES;
