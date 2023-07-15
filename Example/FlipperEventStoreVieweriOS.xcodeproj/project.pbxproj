@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4522359C9233C47E20E4C4DF /* libPods-FlipperEventStoreVieweriOS_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A869B8C4EB4274C91ABDAE92 /* libPods-FlipperEventStoreVieweriOS_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B59BCBEE92097C441208B90D /* Pods_FlipperEventStoreVieweriOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911AB86070FDAA2758B98ACE /* Pods_FlipperEventStoreVieweriOS_Tests.framework */; };
-		FC08F78E81F079157A84B8B1 /* Pods_FlipperEventStoreVieweriOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716F0F01A6723D0690F38B2B /* Pods_FlipperEventStoreVieweriOS_Example.framework */; };
+		95A2E9C11BF1532C3773B848 /* libPods-FlipperEventStoreVieweriOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CFDDCA7D9FC00D18D16F86 /* libPods-FlipperEventStoreVieweriOS_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +60,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6D9AE34B5BE89EF928E0C2A7 /* Pods-FlipperEventStoreVieweriOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperEventStoreVieweriOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FlipperEventStoreVieweriOS_Tests/Pods-FlipperEventStoreVieweriOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		716F0F01A6723D0690F38B2B /* Pods_FlipperEventStoreVieweriOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipperEventStoreVieweriOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		911AB86070FDAA2758B98ACE /* Pods_FlipperEventStoreVieweriOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipperEventStoreVieweriOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AED646B835994130D24E9CC /* Pods-FlipperEventStoreVieweriOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperEventStoreVieweriOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-FlipperEventStoreVieweriOS_Example/Pods-FlipperEventStoreVieweriOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A869B8C4EB4274C91ABDAE92 /* libPods-FlipperEventStoreVieweriOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperEventStoreVieweriOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CFDDCA7D9FC00D18D16F86 /* libPods-FlipperEventStoreVieweriOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperEventStoreVieweriOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5239690613EE7B003BFE6EC /* FlipperEventStoreVieweriOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FlipperEventStoreVieweriOS.podspec; path = ../FlipperEventStoreVieweriOS.podspec; sourceTree = "<group>"; };
 		E6607E9CF519D1F691918F45 /* Pods-FlipperEventStoreVieweriOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperEventStoreVieweriOS_Example.release.xcconfig"; path = "Target Support Files/Pods-FlipperEventStoreVieweriOS_Example/Pods-FlipperEventStoreVieweriOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				FC08F78E81F079157A84B8B1 /* Pods_FlipperEventStoreVieweriOS_Example.framework in Frameworks */,
+				95A2E9C11BF1532C3773B848 /* libPods-FlipperEventStoreVieweriOS_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B59BCBEE92097C441208B90D /* Pods_FlipperEventStoreVieweriOS_Tests.framework in Frameworks */,
+				4522359C9233C47E20E4C4DF /* libPods-FlipperEventStoreVieweriOS_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +135,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				716F0F01A6723D0690F38B2B /* Pods_FlipperEventStoreVieweriOS_Example.framework */,
-				911AB86070FDAA2758B98ACE /* Pods_FlipperEventStoreVieweriOS_Tests.framework */,
+				B0CFDDCA7D9FC00D18D16F86 /* libPods-FlipperEventStoreVieweriOS_Example.a */,
+				A869B8C4EB4274C91ABDAE92 /* libPods-FlipperEventStoreVieweriOS_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +227,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				66C3082D85BF66B2FB37E4B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +296,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		66C3082D85BF66B2FB37E4B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipperEventStoreVieweriOS_Tests/Pods-FlipperEventStoreVieweriOS_Tests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog/glog.framework/glog",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperEventStoreVieweriOS_Tests/Pods-FlipperEventStoreVieweriOS_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BA1BB1FE9DAB5D9710FAFE5F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,11 +369,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlipperEventStoreVieweriOS_Example/Pods-FlipperEventStoreVieweriOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FlipperEventStoreVieweriOS/FlipperEventStoreVieweriOS.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog/glog.framework/glog",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlipperEventStoreVieweriOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

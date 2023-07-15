@@ -7,11 +7,24 @@
 //
 
 #import "HFAppDelegate.h"
-
+@import FlipperEventStoreVieweriOS;
 @implementation HFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    FlipperClient* client = [FlipperClient sharedClient];
+    
+    EventStoreViewerPlugin* plugin =  [[EventStoreViewerPlugin alloc] init];
+    [client addPlugin:plugin];
+    // Add all sorts of other amazing plugins here ...
+
+    
+    [client start];
+
+    [plugin channel:@"test" value: @"hello" key: @"bad"];
+    
     // Override point for customization after application launch.
     return YES;
 }

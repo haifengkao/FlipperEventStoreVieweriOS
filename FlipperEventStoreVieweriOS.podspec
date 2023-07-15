@@ -21,22 +21,30 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Hai Feng Kao/FlipperEventStoreVieweriOS'
+  s.homepage         = 'https://github.com/HaiFengKao/FlipperEventStoreVieweriOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Hai Feng Kao' => 'haifeng@cocoaspice.in' }
-  s.source           = { :git => 'https://github.com/Hai Feng Kao/FlipperEventStoreVieweriOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/HaiFengKao/FlipperEventStoreVieweriOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'FlipperEventStoreVieweriOS/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'FlipperEventStoreVieweriOS' => ['FlipperEventStoreVieweriOS/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.swift_version = '5.0'
+  s.public_header_files = 'FlipperEventStoreVieweriOS/Classes/FlipperEventStoreViewer.h'
+  s.xcconfig = {
+       'CLANG_CXX_LIBRARY' => 'libc++'
+  }
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FlipperKit'
+
+  # shutup target has transitive dependencies that include statically linked binaries: (Flipper-Boost-iOSX and FlipperKit)) during validation.
+  s.static_framework = true
 end

@@ -1,13 +1,55 @@
-use_frameworks!
+project 'FlipperEventStoreVieweriOS.xcodeproj'
+source 'https://github.com/facebook/flipper.git'
+source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '10.0'
+# ignore all warnings from stupid Facebook SDK
+inhibit_all_warnings!
+
+platform :ios, '15.0'
+
+def flipper
+  flipperkit_version = '0.202.0'
+  # It is likely that you'll only want to include Flipper in debug builds,
+  # in which case you add the `:configuration` directive:
+  pod 'FlipperKit', '~>' + flipperkit_version, :configuration => 'Debug'
+  pod 'FlipperKit/FlipperKitLayoutComponentKitSupport', '~>' + flipperkit_version, :configuration => 'Debug'
+  pod 'FlipperKit/SKIOSNetworkPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
+  pod 'FlipperKit/FlipperKitUserDefaultsPlugin', '~>' + flipperkit_version, :configuration => 'Debug'
+  # ...unfortunately at this time that means you'll need to explicitly mark
+  # transitive dependencies as being for debug build only as well:
+  pod 'Flipper-DoubleConversion', :configuration => 'Debug'
+  pod 'Flipper-Folly', :configuration => 'Debug'
+  pod 'Flipper-Glog', :configuration => 'Debug'
+  pod 'Flipper-PeerTalk', :configuration => 'Debug'
+  pod 'boost-for-react-native', :configuration => 'Debug'
+  pod 'OpenSSL-Universal', :configuration => 'Debug'
+  pod 'CocoaAsyncSocket', :configuration => 'Debug'
+  # ...except, of course, those transitive dependencies that your
+  # application itself depends, e.g.:
+  pod 'ComponentKit', '~> 0.31'
+
+end
 
 target 'FlipperEventStoreVieweriOS_Example' do
-  pod 'FlipperEventStoreVieweriOS', :path => '../'
+  flipper
 
-  target 'FlipperEventStoreVieweriOS_Tests' do
-    inherit! :search_paths
 
-    
-  end
+  pod 'FlipperEventStoreVieweriOS', :path => '../', :configuration => 'Debug'
+
+end
+
+target 'FlipperEventStoreVieweriOS_Tests' do
+  flipper
+
+  pod 'FlipperEventStoreVieweriOS', :path => '../', :configuration => 'Debug'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+        config.build_settings.delete 'MACOS_DEPLOYMENT_TARGET'
+      end
+    end
 end
