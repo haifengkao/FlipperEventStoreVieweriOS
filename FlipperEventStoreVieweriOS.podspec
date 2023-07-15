@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlipperEventStoreVieweriOS'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FlipperEventStoreVieweriOS.'
+  s.version          = '0.3.0'
+  s.summary          = 'a iOS plugin for Facebook Flipper to view EventStore in app'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+a iOS plugin for FlipperKit to view EventStore in app. Need to install the desktop plugin as well(https://www.npmjs.com/package/flipper-plugin-eventstoreviewer).
                        DESC
 
   s.homepage         = 'https://github.com/HaiFengKao/FlipperEventStoreVieweriOS'
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   s.swift_version = '5.0'
-  s.public_header_files = 'FlipperEventStoreVieweriOS/Classes//EventStoreViewerPlugin.h'
+  s.public_header_files = 'FlipperEventStoreVieweriOS/Classes/EventStoreViewerPlugin.h'
   s.xcconfig = {
        'CLANG_CXX_LIBRARY' => 'libc++'
   }
